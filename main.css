@@ -23,18 +23,46 @@ body {
   color: #CF513D;
 }
 
+.team__container {
+  background-color: #f4f5f7;
+  padding: 32px;
+}
+
+.team__info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 650px;
+  text-align: center;
+
+  & h1 {
+    margin: 0 0 12px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+  }
+
+  & a {
+    color: #172b4d;
+    line-height: 20px;
+    font-weight: normal;
+  }
+}
+
 #alerts {
   background-color: #CF513D;
 }
 
 @media screen and (max-width: 730px) {
-  #search and #boards {
+
+  #search,
+  #boards {
     display: none;
   }
 }
 
 /* Supplied CSS follows. */
-.header-nav__group{
+.header-nav__group {
   display: flex;
 }
 
@@ -46,7 +74,7 @@ body {
   text-decoration: none;
   align-items: center;
   text-align: center;
-  background-color: hsla(0,0%,100%,.3);
+  background-color: hsla(0, 0%, 100%, .3);
   box-shadow: none;
   color: #fff;
   line-height: 32px;
@@ -57,7 +85,7 @@ body {
   height: 20px;
 }
 
-.header-nav__button#search > input {
+.header-nav__button#search>input {
   border-style: none;
   border: none;
   background-image: none;
@@ -67,7 +95,7 @@ body {
   box-shadow: none;
 }
 
-.header-nav__button > .boards-label {
+.header-nav__button>.boards-label {
   font-weight: 700;
   padding-left: 4px;
 }
@@ -81,6 +109,6 @@ body {
   top: 5px;
 }
 
- .header-nav__button > i{
+.header-nav__button>i {
   width: 24px;
 }
